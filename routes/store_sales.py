@@ -4,7 +4,7 @@ import logging
 from datetime import date, timedelta
 
 
-class Sales:
+class StoreSales:
 
     def __init__(self, nz):
         self.nz = nz

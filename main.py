@@ -1,7 +1,7 @@
 import falcon
 from falcon_auth import FalconAuthMiddleware, BasicAuthBackend
 
-from routes.sales import Sales
+from routes.store_sales import StoreSales
 from util.netezza import Netezza
 from util.auth import Auth
 
@@ -16,4 +16,4 @@ auth_middleware = FalconAuthMiddleware(basic_auth)
 api = falcon.App(middleware=[auth_middleware])
 
 # items
-api.add_route('/stores/{store}/sales', Sales(nz))
+api.add_route('/stores/{store}/sales', StoreSales(nz))
