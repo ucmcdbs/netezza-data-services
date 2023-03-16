@@ -1,0 +1,10 @@
+# python bytecode and cache
+__pycache__
+*.pyc
+
+# log files
+logs/
+*.log
+
+# configurations
+.env
